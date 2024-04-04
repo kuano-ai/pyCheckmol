@@ -9,11 +9,15 @@ FG_number;FG_name;"code ";
 "
 6;"thiocarbonyl compound ";"C2S10000 ";"C=S
 "
-7;"thioaldehyde ";"C2S1H000 ";
-8;"thioketone ";"C2S1C000 ";
-9;"imine ";"C2N10000 ";
-10;"hydrazone ";"C2N1N000 ";
-11;"semicarbazone ";"C2NNC4ON ";
+7;"thioaldehyde ";"C2S1H000 ";"CC=S
+"
+8;"thioketone ";"C2S1C000 ";"CC(=S)C
+"
+9;"imine ";"C2N10000 ";"CC(=NC)C
+"
+10;"hydrazone ";"C2N1N000 ";"CC(=NN)C
+"
+11;"semicarbazone ";"C2NNC4ON ";NC(NN=C(C)C)=O
 12;"thiosemicarbazone ";"C2NNC4SN ";
 13;"oxime ";"C2N1OH00 ";
 14;"oxime ether ";"C2N1OC00 ";
@@ -24,43 +28,45 @@ FG_number;FG_name;"code ";
 19;"acetal ";"C2O2CC00 ";
 20;"hemiaminal ";"C2NOHC10 ";
 21;"aminal ";"C2N2CC10 ";
-22;"thiohemiaminal ";"C2NSHC10 ";
+22;"thiohemiaminal ";"C2NSHC10 ";"CC1NCCS1
+"
 23;"thioacetal ";"C2S2CC00 ";
 24;"enamine ";"C2CNH000 ";
 25;"enol ";"C2COH000 ";
 26;"enolether ";"C2COC000 ";
-27;"hydroxy compound ";"O1H00000 ";
-28;"alcohol ";"O1H0C000 ";
-29;"prim. alcohol ";"O1H1C000 ";
-30;"sec. alcohol ";"O1H2C000 ";
-31;"tert. alcohol ";"O1H3C000 ";
-32;"1,2-diol ";"O1H0CO1H ";
-33;"1,2-aminoalcohol ";"O1H0CN1C ";
-34;"phenol ";"O1H1A000 ";
-35;"1,2-diphenol ";"O1H2A000 ";
-36;"enediol ";"C2COH200 ";
-37;"ether ";"O1C00000 ";
-38;"dialkylether ";"O1C0CC00 ";
-39;"alkylarylether ";"O1C0CA00 ";
-40;"diarylether ";"O1C0AA00 ";
-41;"thioether ";"S1C00000 ";
-42;"disulfide ";"S1S1C000 ";
-43;"peroxide ";"O1O1C000 ";
-44;"hydroperoxide ";"O1O1H000 ";
+27;"hydroxy compound ";"O1H00000 ";O[H]
+28;"alcohol ";"O1H0C000 ";CO[H]
+29;"prim. alcohol ";"O1H1C000 ";C(O[H])C
+30;"sec. alcohol ";"O1H2C000 ";C(O[H])(C)C
+31;"tert. alcohol ";"O1H3C000 ";C(O[H])(C)(C)C
+32;"1,2-diol ";"O1H0CO1H ";"OCCO
+"
+33;"1,2-aminoalcohol ";"O1H0CN1C ";O([H])CCN
+34;"phenol ";"O1H1A000 ";C1(=CC=CC=C1)O[H]
+35;"1,2-diphenol ";"O1H2A000 ";C1=CC=CC(=C1O[H])O[H]
+36;"enediol ";"C2COH200 ";C(=C/O[H])/O[H]
+37;"ether ";"O1C00000 ";COC
+38;"dialkylether ";"O1C0CC00 ";COC
+39;"alkylarylether ";"O1C0CA00 ";C1(=CC=CC=C1)OC
+40;"diarylether ";"O1C0AA00 ";C1(=CC=CC=C1)OC2=CC=CC=C2
+41;"thioether ";"S1C00000 ";CSC
+42;"disulfide ";"S1S1C000 ";CSSC
+43;"peroxide ";"O1O1C000 ";COOC
+44;"hydroperoxide ";"O1O1H000 ";COO[H]
 45;"hydrazine derivative ";"N1N10000 ";
 46;"hydroxylamine ";"N1O1H000 ";
-47;"amine ";"N1C00000 ";
-48;"prim. amine ";"N1C10000 ";
-49;"prim. aliphat. amine ";"N1C1C000 ";
-50;"prim. aromat. amine ";"N1C1A000 ";
-51;"sec. amine ";"N1C20000 ";
-52;"sec. aliphat. amine ";"N1C2CC00 ";
-53;"sec. mixed amine (aryl alkyl) ";"N1C2AC00 ";
-54;"sec. aromat. amine ";"N1C2AA00 ";
-55;"tert. amine ";"N1C30000 ";
-56;"tert. aliphat. amine ";"N1C3CC00 ";
-57;"tert. mixed amine ";"N1C3AC00 ";
-58;"tert. arom_amine ";"N1C3AA00 ";
+47;"amine ";"N1C00000 ";CN
+48;"prim. amine ";"N1C10000 ";CN
+49;"prim. aliphat. amine ";"N1C1C000 ";CC(C)N
+50;"prim. aromat. amine ";"N1C1A000 ";C1(=CC=CC=C1)N
+51;"sec. amine ";"N1C20000 ";CNC
+52;"sec. aliphat. amine ";"N1C2CC00 ";CNCC(C)C
+53;"sec. mixed amine (aryl alkyl) ";"N1C2AC00 ";C(NC1=CC=CC=C1)C(C)C
+54;"sec. aromat. amine ";"N1C2AA00 ";CNC1=CC=CC=C1
+55;"tert. amine ";"N1C30000 ";CN(C)C
+56;"tert. aliphat. amine ";"N1C3CC00 ";CN(C(C)C)C
+57;"tert. mixed amine ";"N1C3AC00 ";CNC.C1=CC=CC=C1
+58;"tert. arom_amine ";"N1C3AA00 ";N(C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3
 59;"quaternary ammonium salt ";"N1C400T2 ";
 60;"N-oxide ";"N0O10000 ";
 61;"halogen deriv. ";"XX000000 ";
